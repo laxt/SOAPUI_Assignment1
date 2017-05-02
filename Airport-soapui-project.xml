@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="3fea028a-87f3-4adf-8975-3df363a02911" activeEnvironment="Default" name="Airport" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="5fbef7ec-6ba0-457b-ac28-2e97fa44281d" wsaVersion="NONE" name="airportSoap" type="wsdl" bindingName="{http://www.webserviceX.NET}airportSoap" soapVersion="1_1" anonymous="optional" definition="http://www.webservicex.net/airport.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint></con:endpoints><con:operation id="40bc020b-a990-4c7a-8b11-6738055ffef1" isOneWay="false" action="http://www.webserviceX.NET/getAirportInformationByAirportCode" name="getAirportInformationByAirportCode" bindingOperationName="getAirportInformationByAirportCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="da705728-8c22-4c66-9757-ada93efec60c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:getAirportInformationByAirportCode>\r
-         <!--Optional:-->\r
-         <web:airportCode>?</web:airportCode>\r
-      </web:getAirportInformationByAirportCode>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/getAirportInformationByAirportCode"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="460e3c5f-cd3b-4413-a41c-e9a61defd605" isOneWay="false" action="http://www.webserviceX.NET/getAirportInformationByCityOrAirportName" name="getAirportInformationByCityOrAirportName" bindingOperationName="getAirportInformationByCityOrAirportName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9bcbbd76-297d-4b58-9eb3-3327ffce2aad" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:getAirportInformationByCityOrAirportName>\r
-         <!--Optional:-->\r
-         <web:cityOrAirportName>?</web:cityOrAirportName>\r
-      </web:getAirportInformationByCityOrAirportName>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/getAirportInformationByCityOrAirportName"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="14b4b5a1-d2ab-412c-bd3b-82517556aa75" isOneWay="false" action="http://www.webserviceX.NET/GetAirportInformationByCountry" name="GetAirportInformationByCountry" bindingOperationName="GetAirportInformationByCountry" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5010d18e-d893-45f3-8d59-17d4e2d8d693" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:GetAirportInformationByCountry>\r
-         <!--Optional:-->\r
-         <web:country>?</web:country>\r
-      </web:GetAirportInformationByCountry>\r
-   </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetAirportInformationByCountry"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="09fc9911-06e4-470f-96b7-1ef59ad3bfbf" isOneWay="false" action="http://www.webserviceX.NET/getAirportInformationByISOCountryCode" name="getAirportInformationByISOCountryCode" bindingOperationName="getAirportInformationByISOCountryCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e10bf744-4f7a-4d7d-93b5-ff3d19176b4e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <web:getAirportInformationByISOCountryCode>\r
-         <!--Optional:-->\r
-         <web:CountryAbbrviation>?</web:CountryAbbrviation>\r
-      </web:getAirportInformationByISOCountryCode>\r
-   </soapenv:Body>\r
+<con:soapui-project id="3fea028a-87f3-4adf-8975-3df363a02911" activeEnvironment="Default" name="Airport" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="5fbef7ec-6ba0-457b-ac28-2e97fa44281d" wsaVersion="NONE" name="airportSoap" type="wsdl" bindingName="{http://www.webserviceX.NET}airportSoap" soapVersion="1_1" anonymous="optional" definition="http://www.webservicex.net/airport.asmx?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint></con:endpoints><con:operation id="40bc020b-a990-4c7a-8b11-6738055ffef1" isOneWay="false" action="http://www.webserviceX.NET/getAirportInformationByAirportCode" name="getAirportInformationByAirportCode" bindingOperationName="getAirportInformationByAirportCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="da705728-8c22-4c66-9757-ada93efec60c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:getAirportInformationByAirportCode>
+         <!--Optional:-->
+         <web:airportCode>?</web:airportCode>
+      </web:getAirportInformationByAirportCode>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/getAirportInformationByAirportCode"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="460e3c5f-cd3b-4413-a41c-e9a61defd605" isOneWay="false" action="http://www.webserviceX.NET/getAirportInformationByCityOrAirportName" name="getAirportInformationByCityOrAirportName" bindingOperationName="getAirportInformationByCityOrAirportName" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9bcbbd76-297d-4b58-9eb3-3327ffce2aad" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:getAirportInformationByCityOrAirportName>
+         <!--Optional:-->
+         <web:cityOrAirportName>?</web:cityOrAirportName>
+      </web:getAirportInformationByCityOrAirportName>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/getAirportInformationByCityOrAirportName"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="14b4b5a1-d2ab-412c-bd3b-82517556aa75" isOneWay="false" action="http://www.webserviceX.NET/GetAirportInformationByCountry" name="GetAirportInformationByCountry" bindingOperationName="GetAirportInformationByCountry" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5010d18e-d893-45f3-8d59-17d4e2d8d693" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:GetAirportInformationByCountry>
+         <!--Optional:-->
+         <web:country>?</web:country>
+      </web:GetAirportInformationByCountry>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/GetAirportInformationByCountry"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="09fc9911-06e4-470f-96b7-1ef59ad3bfbf" isOneWay="false" action="http://www.webserviceX.NET/getAirportInformationByISOCountryCode" name="getAirportInformationByISOCountryCode" bindingOperationName="getAirportInformationByISOCountryCode" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e10bf744-4f7a-4d7d-93b5-ff3d19176b4e" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:getAirportInformationByISOCountryCode>
+         <!--Optional:-->
+         <web:CountryAbbrviation>?</web:CountryAbbrviation>
+      </web:getAirportInformationByISOCountryCode>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.webserviceX.NET/getAirportInformationByISOCountryCode"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="a44fa087-b8be-4ac1-9b0d-0e2a8794a595" name="Airport TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="1a95b2b0-8cb0-4c6d-82b2-9f516809612c" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Airport TestCase 1" searchProperties="true"><con:settings/><con:testStep type="request" name="getAirportInformationByAirportCode" id="e95e4782-896a-4a13-993b-41726f25f58c"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>airportSoap</con:interface><con:operation>getAirportInformationByAirportCode</con:operation><con:request name="getAirportInformationByAirportCode" id="dd88f505-4f90-4074-b397-e28420722b3c"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://www.webservicex.net/airport.asmx</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.webserviceX.NET">
    <soapenv:Header/>
    <soapenv:Body>
